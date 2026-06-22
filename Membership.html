@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EOS Membership</title>
+
+    <link rel="stylesheet" href="Membership.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            EOS
+        </div>
+
+        <ul>
+            <li>
+                <a href="EON.html">Beranda</a></li>
+            </li>
+            <li>
+                <a href="Membership.html">Membership</a>
+            </li>
+            <li>
+                <a href="Membership Personal.html">Membership Personal</a>
+            </li>
+            <li>
+                <a href="#faq">FAQ</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <section class="hero">
+        <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto">
+            <source src="assets/videos/EOS Video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-text">
+            <h1>
+                Join <span>EOS Membership</span>
+            </h1>
+            <p>
+                Dukung EOS dan dapatkan berbagai keuntungan eksklusif
+                mulai dari akses komunitas spesial, konten rahasia,
+                hingga event member khusus.
+            </p>
+            <a href="#membership" class="btn">
+                Lihat Paket
+            </a>
+        </div>
+    </section>
+
+
+    <section class="membership" id="membership">
+        <div class="section-title">
+            <h2>
+                Paket Membership
+            </h2>
+            <p>
+                Pilih membership favoritmu
+            </p>
+        </div>
+        <div class="membership-container">
+
+            <div class="membership-card">
+                <h3>
+                    Silver
+                </h3>
+                <div class="membership-price">
+                    15K <span>/bulan</span>
+                </div>
+                <ul>
+                    <li>Badge Member</li>
+                    <li>Emoji Khusus</li>
+                    <li>Akses Chat Member</li>
+                </ul>
+                <a href="#" class="btn">
+                    Join Sekarang
+                </a>
+            </div>
+
+            <div class="membership-card">
+                <h3>
+                    Gold
+                </h3>
+                <div class="membership-price">
+                    35K <span>/bulan</span>
+                </div>
+                <ul>
+                    <li>Semua Benefit Silver</li>
+                    <li>Konten Eksklusif</li>
+                    <li>Member Event</li>
+                </ul>
+                <a href="#" class="btn">
+                    Join Sekarang
+                </a>
+            </div>
+
+            <div class="membership-card">
+                <h3>
+                    Diamond
+                </h3>
+                <div class="membership-price">
+                    75K <span>/bulan</span>
+                </div>
+                <ul>
+                    <li>Semua Benefit Gold</li>
+                    <li>VIP Discord Role</li>
+                    <li>Special Request</li>
+                </ul>
+                <a href="#" class="btn">
+                    Join Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="membership-form-section">
+        <div class="membership-form">
+            <h2>
+                Form Pendaftaran
+            </h2>
+            <form id="membershipForm">
+                <div class="input-box">
+                    <label>
+                        Nama
+                    </label>
+                    <input
+                        type="text"
+                        id="nama"
+                        placeholder="Masukkan nama"
+                        required>
+                </div>
+
+                <div class="input-box">
+                    <label>
+                        Email
+                    </label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Masukkan email"
+                        required>
+                </div>
+
+                <div class="input-box">
+                    <label>
+                        Pesan
+                    </label>
+                    <textarea
+                        id="pesan"
+                        placeholder="Tulis pesan..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn">
+                    Kirim
+                </button>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="faq" id="faq">
+        <div class="section-title">
+            <h2>
+                FAQ
+            </h2>
+            <p>
+                Pertanyaan yang sering ditanyakan
+            </p>
+        </div>
+
+        <div class="membership-faq">
+            <div class="faq-item">
+                <h4>
+                    Apa keuntungan membership?
+                </h4>
+                <p>
+                    Kamu akan mendapatkan akses konten eksklusif,
+                    badge spesial, dan berbagai benefit lainnya.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h4>
+                    Apakah membership bisa dibatalkan?
+                </h4>
+                <p>
+                    Ya, membership dapat dihentikan kapan saja.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h4>
+                    Bagaimana cara join?
+                </h4>
+                <p>
+                    Klik tombol join lalu lanjutkan pembayaran
+                    sesuai paket yang dipilih.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <div id="notif" class="notif">
+        Pendaftaran berhasil!
+    </div>
+
+    <footer>
+        © 2026 EOS Membership
+    </footer>
+
+    <script src="Membership.js"></script>
+
+</body>
+</html>

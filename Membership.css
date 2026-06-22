@@ -1,0 +1,377 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    background:linear-gradient(135deg,#070b16,#12091f,#1b1029);
+    color:white;
+    overflow-x:hidden;
+}
+
+
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
+    background:rgba(5,10,20,0.45);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid rgba(255,255,255,0.05);
+    z-index:1000;
+}
+.logo{
+    font-size:42px;
+    font-weight:700;
+    color:#a855f7;
+}
+nav ul{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    list-style:none;
+}
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+nav ul li a:hover{
+    color:#a855f7;
+}
+
+
+
+.btn{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    padding:16px 38px;
+    border-radius:50px;
+    background:linear-gradient(135deg,black,#a855f7);
+    color:whitesmoke;
+    text-decoration:none;
+    font-weight:600;
+    border:none;
+    cursor:pointer;
+    transition:0.4s;
+}
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 45px rgba(168,85,247,0.35);
+}
+
+
+
+.hero{
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
+    padding:0 8%;
+}
+.hero-video{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-3;
+    filter:
+    blur(10px)
+    brightness(0.25)
+    saturate(1.2);
+    transform:scale(1.08);
+}
+.hero-overlay{
+    background:
+    linear-gradient(
+    135deg,
+    #090d18,
+    #12091f,
+    #1d1033
+    );
+}
+
+
+
+.hero-text{
+    width:100%;
+    max-width:950px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    animation:fadeUp 1.2s ease;
+}
+.hero-text h1{
+    font-size:92px;
+    line-height:1.05;
+    margin-bottom:25px;
+    font-weight:700;
+    text-align:center;
+}
+.hero-text span{
+    color:#a855f7;;
+}
+.hero-text p{
+    width:100%;
+    max-width:760px;
+    font-size:20px;
+    line-height:1.9;
+    color:whitesmoke;
+    margin-bottom:45px;
+    text-align:center;
+}
+
+
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(60px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+
+.membership{
+    padding:120px 8%;
+    background:#0d1320;
+    text-align:center;
+}
+.section-title{
+    margin-bottom:60px;
+}
+.section-title h2{
+    font-size:58px;
+    margin-bottom:15px;
+}
+.section-title p{
+    font-size:18px;
+    color:#94a3b8;
+}
+
+
+
+.membership-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+}
+
+.membership-card{
+    background:#131c2e;
+    padding:45px 35px;
+    border-radius:35px;
+    border:1px solid rgba(255,255,255,0.05);
+    transition:0.4s;
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.35);
+}
+.membership-card:hover{
+    transform:translateY(-12px);
+    border-color:rgba(168,85,247,0.4);
+    box-shadow:
+    0 25px 50px rgba(0,0,0,0.45),
+    0 0 25px (0,217,255,0.1),
+}
+.membership-card h3{
+    font-size:34px;
+    margin-bottom:20px;
+    color:#a855f7;
+}
+.membership-price{
+    font-size:60px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+.membership-price span{
+    font-size:18px;
+    color:#94a3b8;
+}
+.membership-card ul{
+    list-style:none;
+    margin-bottom:35px;
+}
+.membership-card ul li{
+    margin:16px 0;
+    color:#d1d5db;
+    line-height:1.8;
+}
+
+
+
+.membership-form-section{
+    padding:0 8% 120px;
+    background:#0d1320;
+}
+.membership-form{
+    max-width:750px;
+    margin:auto;
+    background:#131c2e;
+    padding:55px;
+    border-radius:35px;
+    border:1px solid rgba(255,255,255,0.05);
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.35);
+}
+.membership-form h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:45px;
+}
+.input-box{
+    margin-bottom:25px;
+}
+.input-box label{
+    display:block;
+    margin-bottom:12px;
+    color:#d1d5db;
+}
+.input-box input,
+.input-box textarea{
+    width:100%;
+    padding:18px;
+    border:none;
+    outline:none;
+    border-radius:18px;
+    background:#0b1220;
+    color:white;
+    border:1px solid rgba(255,255,255,0.05);
+}
+.input-box textarea{
+    height:140px;
+    resize:none;
+}
+
+
+
+.faq{
+    padding:0 8% 120px;
+    background:#0d1320;
+}
+.membership-faq{
+    margin-top:70px;
+}
+.faq-item{
+    background:#131c2e;
+    padding:28px;
+    border-radius:25px;
+    margin-bottom:20px;
+    border:1px solid rgba(255,255,255,0.05);
+    transition:0.3s;
+}
+.faq-item:hover{
+    border-color:rgba(168,85,247,0.4);
+}
+.faq-item h4{
+    font-size:22px;
+    color:#a855f7;
+    margin-bottom:12px;
+}
+.faq-item p{
+    color:#cbd5e1;
+    line-height:1.9;
+}
+
+
+
+footer{
+    padding:35px;
+    text-align:center;
+    background:#081018;
+    color:#94a3b8;
+    border-top:1px solid rgba(255,255,255,0.05);
+}
+
+
+
+@media(max-width:1100px){
+.membership-container{
+    grid-template-columns:1fr;
+}
+.hero-text h1{
+    font-size:70px;
+}
+}
+@media(max-width:700px){
+nav{
+    padding:20px 6%;
+}
+nav ul{
+    gap:20px;
+}
+.logo{
+    font-size:34px;
+}
+.hero{
+    padding:0 6%;
+}
+.hero-text h1{
+    font-size:52px;
+}
+.hero-text p{
+    font-size:16px;
+}
+.section-title h2{
+    font-size:42px;
+}
+.membership-form{
+    padding:35px 25px;
+}
+.membership-form h2{
+    font-size:36px;
+}
+.membership-price{
+    font-size:48px;
+}
+.btn{
+    padding:14px 28px;
+}
+}
+
+.notif{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg,#7b2ff7,#a855f7);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(168,85,247,.4);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: .3s;
+    z-index: 9999;
+}
+
+.notif.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
