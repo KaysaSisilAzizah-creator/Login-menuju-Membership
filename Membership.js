@@ -5,9 +5,9 @@ form.addEventListener("submit", function (event) {
 
     const nama = document.getElementById("nama").value;
     const email = document.getElementById("email").value;
-    const pesan = document.getElementById("pesan").value;
+    const password = document.getElementById("password").value;
 
-    if (nama === "" || email === "" || pesan === "") {
+    if (nama === "" || email === "" || password === "") {
         alert("Semua data harus diisi!");
         return;
     }
@@ -17,7 +17,7 @@ form.addEventListener("submit", function (event) {
     dataMember.push({
         nama: nama,
         email: email,
-        pesan: pesan
+        password: password
     });
 
     localStorage.setItem("member", JSON.stringify(dataMember));
